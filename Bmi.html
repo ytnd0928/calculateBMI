@@ -1,0 +1,28 @@
+<html>
+  <head>
+      <meta charset = "utf-8">
+      <script>
+         function calcBmi() {
+           const a = document.getElementById('0').value;
+           const b =  document.getElementById('1').value;
+           if (b / a*a >= 25.0) {
+             document.getElementById('result').textContent = "ふとっちょ"
+           } else if (b / a*a <= 18.5) {
+             document.getElementById('result').textContent = "ガリガリ"
+           }　else {
+             document.getElementById('result').textContent = "ナイスバディー"
+           }
+
+         }
+      </script>
+
+  </head>
+  <body>
+      <h2> BMI計算　</h2>
+      身長：<input id ='0' value="" />
+      体重 : <input id = "1" value="" />
+      <button onClick='calcBmi()'>計算！</button>
+      <h1 id = 'result'></h1>
+    </body>
+
+    </html>
